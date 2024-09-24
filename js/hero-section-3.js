@@ -19,6 +19,20 @@ document.getElementById('add-money-in-aid')
         if(myAvailableMoney >= 0){
             console.log(myAvailableMoney) ;
             document.getElementById('my-money').innerText = myAvailableMoney
+
+
+            //add history of donations
+           //histoy
+        const div = document.createElement('div');
+        div.classList.add();
+        div.innerHTML = `
+                 <h4 class="text-center text-2xl font-bold"> Aid for Injured in the Quota Movement</h4>
+                 <p  class="text-center text-lg font-semibold bg-gray-200"> ${addInputMonye} TK Donated. New Balance ${myAvailableMoney}. </p>
+                  
+                 <div class="divider"></div>
+        `
+       document.getElementById('history-container').appendChild(div)
+
         }else{
             alert('You have not sufficent balance')
         }

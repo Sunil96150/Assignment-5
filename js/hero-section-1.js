@@ -2,23 +2,31 @@ document.getElementById('btn-of-noakhali')
 .addEventListener('click', function(){
     const takeInputMoney = getValueOfInput('add-money-in-noakhali');
     const iHaveSomeMoney = getValueOftext('my-money');
-    
+
     if(takeInputMoney >= 0 && takeInputMoney !== '' && iHaveSomeMoney >= takeInputMoney){
         const account = getValueOftext('account-of-noakhali');
-        
-        const updateAccount = account + takeInputMoney
+        const updateAccount = account + takeInputMoney;
         console.log(updateAccount);
+        document.getElementById('account-of-noakhali').innerText = updateAccount
 
-        document.getElementById('account-of-noakhali').innerText = updateAccount;
+        //less my current balance
 
-        // less the my money
+        const nowMyNewaccount = iHaveSomeMoney - takeInputMoney;
+        document.getElementById('my-money').innerText = nowMyNewaccount;
 
-        const instantMoney = iHaveSomeMoney - takeInputMoney
-        if(instantMoney >= 0){
-            console.log(instantMoney);
-            document.getElementById('my-money').innerText = instantMoney;
-        }
 
+        //adding date and time
+       
+        //histoy
+        const div = document.createElement('div');
+        div.classList.add();
+        div.innerHTML = `
+                 <h4 class="text-center text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h4>
+                 <p  class="text-center text-lg font-semibold bg-gray-200"> ${takeInputMoney} TK Donated. New Balance ${nowMyNewaccount}. </p>
+                  
+                 <div class="divider"></div>
+        `
+       document.getElementById('history-container').appendChild(div)
     }else{
         alert('You have not sufficent balance')
     }

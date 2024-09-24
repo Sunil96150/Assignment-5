@@ -17,7 +17,23 @@ document.getElementById('btn-of-feni')
        if(currentMoney >= 0){
         console.log(currentMoney)
         document.getElementById('my-money').innerText = currentMoney;
+        
+
+        //histoy
+        const div = document.createElement('div');
+        div.classList.add();
+        div.innerHTML = `
+                 <h4 class="text-center text-2xl font-bold"> Donate for Flood Relief in Feni,Bangladesh</h4>
+                 <p  class="text-center text-lg font-semibold bg-gray-200"> ${getInputMoney} TK Donated. New Balance ${currentMoney}. </p>
+                  
+                 <div class="divider"></div>
+        `
+       document.getElementById('history-container').appendChild(div)
+
+
        }
+
+       
     }else{
         alert('You have not sufficent balance')
      }

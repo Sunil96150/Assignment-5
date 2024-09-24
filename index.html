@@ -22,9 +22,9 @@
 }
 </script>
 <body>
-    <header>
-        <nav class=" bg-yellow-50 ">
-            <div class="navbar bg-base-100 bg-yellow-50 md:px-16 px-3 pb-10 py-6 max-w-screen-xl mx-auto">
+    <header class="sticky top-0 bg-opacity-30 ">
+        <nav class=" bg-yellow-50 sticky ">
+            <div class="navbar bg-base-100 bg-yellow-50 md:px-16 px-3 pb-10 py-6 max-w-screen-xl mx-auto sticky bg-opacity-15">
                 <div class="navbar-start">
                  <button id="blog-btn" class="bg-bd_bt px-5 py-2 rounded-md font-bold">Blog</button>
                 </div>
@@ -39,11 +39,11 @@
               </div>
         </nav>
         <section class="banner w-[230px] mx-auto mt-14 mb-10">
-          <button class="btn btn-active font-semibold text-xl text-text_tk mr-2">Donation</button>
-          <button class="btn btn-active font-semibold text-xl text-text_tk">History</button>
+          <button id="donation-btn" class="btn btn-active font-semibold text-xl text-text_tk mr-2 hover:bg-bd_bt">Donation</button>
+          <button id="history-btn" class="btn btn-active hover:bg-bd_bt font-semibold text-xl text-text_tk">History</button>
         </section>
     </header>
-    <main>
+    <main id="main-container">
       <!-- hero section-1 -->
        <section class=" mx-auto  md:p-10  lg:p-11 p-3  ">
         <div class="hero bg-base-200 bg-white">
@@ -150,9 +150,19 @@
         </div>
        </section>
     </main>
+     <!-- history section -->
+   <section id="history-section">
+    <div  class="history mb-10">
+     <h2 class="text-3xl font-bold text-center mb-5"><u>History Of Donations</u></h2>
+        <div id="history-container">
+        </div>
+     </div>
+   </section>
+    <footer class=" bg-yellow-50 h-24"></footer>
     <script src="js/utility.js"></script>
     <script src="js/hero-section-1.js"></script>
     <script src="js/hero-section-2.js"></script>
     <script src="js/hero-section-3.js"></script>
+    <script src="js/facilities.js"></script>
 </body>
 </html>

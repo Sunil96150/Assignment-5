@@ -10,3 +10,10 @@ function getValueOftext(id){
     const textNumber = parseFloat(textValue);
     return textNumber;
 }
+
+function showDonationAndHistory(){
+    document.getElementById(id).classList.add('hidden');
+    document.getElementById(id).classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden')
+}
