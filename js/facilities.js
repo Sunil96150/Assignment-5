@@ -15,4 +15,10 @@ document.getElementById('history-section').classList.remove('hidden');
 })
 
 
+document.getElementById('blog-btn')
+.addEventListener('click', function(){
+    window.location.href = "blog.html";
+})
+
+
 
