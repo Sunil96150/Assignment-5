@@ -21,4 +21,19 @@ document.getElementById('blog-btn')
 })
 
 
+const buttonOne = document.getElementById('donation-btn');
+const buttonTwo = document.getElementById('history-btn');
+
+buttonOne.addEventListener('click', function(){
+    buttonTwo.style.backgroundColor = '';
+    buttonOne.style.backgroundColor= 'rgba(180, 244, 97, 1)';
+
+})
+
+buttonTwo.addEventListener('click', function(){
+    buttonOne.style.backgroundColor = '';
+    buttonTwo.style.backgroundColor = 'rgba(180, 244, 97, 1)';
+
+})
+
 
