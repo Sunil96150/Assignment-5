@@ -26,9 +26,8 @@ document.getElementById('add-money-in-aid')
         const div = document.createElement('div');
         div.classList.add();
         div.innerHTML = `
-                 <h4 class="text-center text-2xl font-bold"> Aid for Injured in the Quota Movement</h4>
-                 <p  class="text-center text-lg font-semibold bg-gray-200"> ${addInputMonye} TK Donated. New Balance ${myAvailableMoney}. </p>
-                  
+                 <h4 class="text-center text-2xl font-bold mb-2"> Aid for Injured in the Quota Movement</h4>
+                 <p  class="text-center text-lg font-semibold bg-gray-200">  ${new Date().toLocaleDateString()} : ${addInputMonye} TK Donated. New Balance ${myAvailableMoney} TK. </p>  
                  <div class="divider"></div>
         `
        document.getElementById('history-container').appendChild(div)

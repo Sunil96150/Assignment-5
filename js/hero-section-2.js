@@ -23,10 +23,9 @@ document.getElementById('btn-of-feni')
         const div = document.createElement('div');
         div.classList.add();
         div.innerHTML = `
-                 <h4 class="text-center text-2xl font-bold"> Donate for Flood Relief in Feni,Bangladesh</h4>
-                 <p  class="text-center text-lg font-semibold bg-gray-200"> ${getInputMoney} TK Donated. New Balance ${currentMoney}. </p>
-                  
-                 <div class="divider"></div>
+                 <h4 class="text-center text-2xl font-bold mb-2"> Donate for Flood Relief in Feni,Bangladesh</h4>
+                 <p  class="text-center text-lg font-semibold bg-gray-200"> ${new Date().toLocaleDateString()} : ${getInputMoney} TK Donated. New Balance ${currentMoney} TK. </p>
+                  <div class="divider"></div>
         `
        document.getElementById('history-container').appendChild(div)
 

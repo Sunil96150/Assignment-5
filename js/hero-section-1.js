@@ -21,9 +21,8 @@ document.getElementById('btn-of-noakhali')
         const div = document.createElement('div');
         div.classList.add();
         div.innerHTML = `
-                 <h4 class="text-center text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h4>
-                 <p  class="text-center text-lg font-semibold bg-gray-200"> ${takeInputMoney} TK Donated. New Balance ${nowMyNewaccount}. </p>
-                  
+                 <h4 class="text-center text-2xl font-bold mb-2">Donate for Flood at Noakhali, Bangladesh</h4>
+                 <p  class="text-center text-lg font-semibold bg-gray-200">  ${new Date().toLocaleDateString()} : ${takeInputMoney} TK Donated. New Balance ${nowMyNewaccount} TK. </p>   
                  <div class="divider"></div>
         `
        document.getElementById('history-container').appendChild(div)
